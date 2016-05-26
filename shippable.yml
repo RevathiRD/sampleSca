@@ -10,23 +10,7 @@ build:
   ci:
     - java -version
     - echo $SHIPPABLE_SCALA_VERSION
-integrations:
-  notifications:
-    - integrationName: ship-samplePyt
-      type: webhook
-      payload:
-       - API_URL=$SHIPPABLE_API_URL
-       - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
-       - FOO=bar
-       - FIZZ=buzz
-    - integrationName: email
-      type: email
-      recipients:
-        - revathi@shippable.com
-      on_start: never
-      on_pull_request: always
-      on_success: always
-      on_failure: always 
+
       
       
       
