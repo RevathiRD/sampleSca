@@ -4,3 +4,4 @@ jobs:
     steps:
       - GET image1-test
       - GET image2-test
+      - PUT project1-test
