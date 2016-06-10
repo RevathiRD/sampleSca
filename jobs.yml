@@ -1,0 +1,6 @@
+jobs:
+  - name: job14
+    type: manifest
+    steps:
+      - GET image1-test
+      - GET image2-test
