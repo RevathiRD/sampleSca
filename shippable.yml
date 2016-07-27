@@ -11,7 +11,16 @@ build:
     - java -version
     - echo $SHIPPABLE_SCALA_VERSION
     
-    
+integrations:
+  notifications:
+    - integrationName: resources-trigger
+      type: webhook
+      payload:
+        - tag=Shippable Run $BUILD_NUMBER 
+      on_success: always
+      on_failure: never
+      on_pull_request: never
+      on_start: never    
 
       
       
