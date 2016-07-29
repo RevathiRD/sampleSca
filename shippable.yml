@@ -13,7 +13,7 @@ build:
     
 integrations:
   notifications:
-    - integrationName: resource-1234
+    - integrationName: resource-12346
       type: webhook
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
