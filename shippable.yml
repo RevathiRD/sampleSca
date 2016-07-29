@@ -16,7 +16,7 @@ integrations:
     - integrationName: resource-1234
       type: webhook
       payload:
-        - tag=Shippable Run $BUILD_NUMBER 
+        - versionName=Shippable Run $BUILD_NUMBER 
       on_success: always
       on_failure: never
       on_pull_request: never
